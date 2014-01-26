@@ -1,7 +1,6 @@
 .DS_Store
 .sass-cache
 chrome/
-ext/
 Gemfile.lock
 *.png
 *.xpi
