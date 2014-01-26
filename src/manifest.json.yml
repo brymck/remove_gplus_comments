@@ -1,0 +1,21 @@
+---
+name: Remove Google+ Comments
+version: "0.0.1"
+manifest_version: 2
+description: I thought YouTube comments couldn't be dumber.
+  I was proven wrong with the integration of Google+ into YouTube.
+# icons:
+#   '128': /img/icon_128.png
+#   '16': /img/icon_16.png
+#   '32': /img/icon_32.png
+#   '48': /img/icon_48.png
+content_scripts:
+  - css:
+      - /css/style.css
+    js:
+      - /js/jquery-2.1.0.min.js
+      - /js/script.js
+    matches:
+      - https://apis.google.com/*
+      - https://www.youtube.com/*
+    all_frames: true
